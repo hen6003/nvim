@@ -55,6 +55,10 @@ require("lazy").setup({
     },
     'rcarriga/nvim-notify',
     'nvim-tree/nvim-tree.lua',
-    'vimwiki/vimwiki'
+    'vimwiki/vimwiki',
+    {
+        'ElPiloto/telescope-vimwiki.nvim',
+        dependencies = { 'vimwiki/vimwiki', 'nvim-telescope/telescope.nvim' },
+    }
     --'github/copilot.vim'
 })
