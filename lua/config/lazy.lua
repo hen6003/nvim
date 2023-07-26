@@ -31,7 +31,7 @@ require("lazy").setup({
         dependencies = {
             -- LSP Support
             { 'neovim/nvim-lspconfig' }, -- Required
-            {                    -- Optional
+            {                            -- Optional
                 'williamboman/mason.nvim',
                 build = function()
                     pcall(vim.cmd, 'MasonUpdate')
@@ -40,9 +40,9 @@ require("lazy").setup({
             { 'williamboman/mason-lspconfig.nvim' }, -- Optional
 
             -- Autocompletion
-            { 'hrsh7th/nvim-cmp' }, -- Required
+            { 'hrsh7th/nvim-cmp' },     -- Required
             { 'hrsh7th/cmp-nvim-lsp' }, -- Required
-            { 'L3MON4D3/LuaSnip' }, -- Required
+            { 'L3MON4D3/LuaSnip' },     -- Required
         }
     },
     {
@@ -59,6 +59,7 @@ require("lazy").setup({
     {
         'ElPiloto/telescope-vimwiki.nvim',
         dependencies = { 'vimwiki/vimwiki', 'nvim-telescope/telescope.nvim' },
-    }
+    },
+    { 'akinsho/toggleterm.nvim', version = "*", config = true }
     --'github/copilot.vim'
 })
