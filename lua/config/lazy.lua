@@ -54,12 +54,12 @@ require("lazy").setup({
         dependencies = { 'liuchengxu/vim-which-key' },
     },
     'rcarriga/nvim-notify',
-    'nvim-tree/nvim-tree.lua',
     'vimwiki/vimwiki',
     {
         'ElPiloto/telescope-vimwiki.nvim',
         dependencies = { 'vimwiki/vimwiki', 'nvim-telescope/telescope.nvim' },
     },
-    { 'akinsho/toggleterm.nvim', version = "*", config = true }
+    { 'akinsho/toggleterm.nvim', version = "*", config = true },
+    "stevearc/oil.nvim"
     --'github/copilot.vim'
 })
