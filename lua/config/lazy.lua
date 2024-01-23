@@ -17,7 +17,7 @@ require("lazy").setup({
         tag = '0.1.2',
         dependencies = { 'nvim-lua/plenary.nvim' }
     },
-    "gbprod/nord.nvim",
+    "neanias/everforest-nvim",
     {
         "nvim-treesitter/nvim-treesitter",
         build = ":TSUpdate",
@@ -60,6 +60,19 @@ require("lazy").setup({
         dependencies = { 'vimwiki/vimwiki', 'nvim-telescope/telescope.nvim' },
     },
     { 'akinsho/toggleterm.nvim', version = "*", config = true },
-    "stevearc/oil.nvim"
-    --'github/copilot.vim'
-})
+    "stevearc/oil.nvim",
+    {
+        "folke/which-key.nvim",
+        event = "VeryLazy",
+        init = function()
+            vim.o.timeout = true
+            vim.o.timeoutlen = 300
+        end,
+        opts = {
+            -- your configuration comes here
+            -- or leave it empty to use the default settings
+            -- refer to the configuration section below
+        }
+        --'github/copilot.vim'
+    } }
+)

@@ -1,10 +1,7 @@
-require("nord").setup({
-  -- your configuration comes here
-  -- or leave it empty to use the default settings
-  transparent = true, -- Enable this to disable setting the background color
-  terminal_colors = true, -- Configure the colors used when opening a `:terminal` in Neovim
-  borders = true, -- Enable the border between verticaly split windows visible
+require("everforest").setup({
+    -- Your config here
 })
 
+vim.cmd.colorscheme("everforest")
 
-vim.cmd.colorscheme("nord")
+--vim.api.nvim_set_hl(0, "TelescopeBorder", { fg = "#3B4252" })
